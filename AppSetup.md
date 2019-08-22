@@ -73,11 +73,39 @@ amplify env add
 - Do you want to use an AWS profile: <b>Yes</b>
 - Please choose the profile you want to use: <b>default</b>
 
-10. Now that we have our Amplify baseline created and our 3 environments created it's time to commit our code to a git repository. In order to work with the next part of the workshop, one of the following git repository's is required to be used:
+10. Now that we have our Amplify baseline created and our 3 environments created it's time to commit our code to a git repository. In order to work with the next part of the workshop, one of the following git repositories is required to be used:
 - AWS CodeCommit
 - GitHub
 - BitBucket
 - GitLab
 
 ## Next Steps
-Using your Git Repository of choice, create a repository and commit all our your new source code to the master branch. Also make sure to create a second empty <b>test</b> branch as we will need it in the next part of the workshop. Don't forget to push your code up to your repository. Once this has been done, your ready to move onto the next part of the workshop where we will configure our Amplify Deploy processes. Click [here](/DeploymentSetup.md) to process to the next part.
+
+These instructions are for committing your repository to GitHub.  If you want to use one of the other Git repositories, you'll need to change the remote URL to the URL of your preferred repository host.
+
+First of all, you'll need to create a Git repository and commit all of your files to it.  You can do this using the following commands:
+
+```
+git init .
+git add .
+git commit -m "Initial commit"
+```
+
+Next, you'll need to create a new repository in GitHub.  Head over to [this page](https://github.com/new), and create a new repository called `amplify`.  Make sure that the 'Initialise this repository with a README' box is unchecked, and that you're not adding a `.gitignore ` page or a license.  When you've done that, hit the 'Create repository' button.
+
+Now, you can push your code to GitHub using the following commands:
+
+```
+git remote add origin https://github.com/<your-github-username>/amplify
+git push -u origin master
+
+```
+
+Then, create and push a new branch called `test`.  We'll need this for the next section of the workshop.
+
+```
+git branch test
+git push -u origin test
+```
+
+Once this has been done, you're ready to move onto the next part of the workshop where we will configure our Amplify Deploy processes. Click [here](/DeploymentSetup.md) to process to the next part.
