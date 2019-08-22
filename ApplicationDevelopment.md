@@ -118,7 +118,7 @@ Once you've verified an account you should be able to login using a newly create
 ## Adding a GraphQL API
 So, we have an application that has fully working authentication (ok, it's not the prettiest login screen ... but it works) but doesn't do much other than that. Now would be a good time to actually add some functionality to our application and we'll do that by adding in a GraphQL endpoint which will store our notes in a dynamoDB table. We'll also need to add some basic UI bootstrap to present the notes back to the user.
 
-1. To add Authentication, we do much the same thing we did when we added authentication. We simply run the "amplify add" command from the bash terminal.
+1. To add an API, we do much the same thing we did when we added authentication. We simply run the "amplify add" command from the bash terminal.
 ```bash
 amplify add api
 ```
@@ -424,4 +424,4 @@ Our branch has now been uploaded back to our git repository ready for use.
 ![Git Commit](/images/step3-21_git_commit.png)
 
 ## Next Steps
-And their we go. We've added some authentication to our application and integrated a GraphQL endpoint to it. We are now ready to move onto the next step [here](/TriggerDeployment.md) where we will merge the code back to our "test" branch and trigger the automated deployment.
+And there we go. We've added some authentication to our application and integrated a GraphQL endpoint to it. We are now ready to move onto the next step [here](/TriggerDeployment.md) where we will merge the code back to our "test" branch and trigger the automated deployment.
